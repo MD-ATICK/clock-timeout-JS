@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200;300;400;500;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Orbitron:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Quicksand:wght@300;400;600;700&family=Roboto+Mono:wght@200;300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(44, 44, 44);
+}
+.container{
+    max-width: 1000px;
+    text-align: center;
+    margin: 4rem 1rem;
+}
+h1{
+    font-size: 45px;
+    font-weight:500;
+    letter-spacing: 0.7px;
+    word-spacing: 2.5px;
+    margin-bottom: 2rem;
+}
+.extra1{
+    color: aqua;
+}
+.pfrist{
+    font-size: 18px;
+    letter-spacing: 0.7px;
+    word-spacing: 2px;
+}
+.time-content{
+    display: flex;
+    justify-content: center;
+    margin: 8rem 0;
+    font-size: 60px;
+    font-weight: 500;
+}
+.time{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    text-align: center;
+}
+.day{
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+}
+.text{
+    font-size: 17px;
+    letter-spacing: 1.4px ;
+    word-spacing: 2.5px;
+    color: aqua;
+}
+form{
+    margin-top: 3rem;
+    height: 55px;
+    width: 100%;
+}
+.email{
+    height: 100%;
+    width: 65%;
+    margin-right: 2rem;
+    border-radius: 5px;
+    padding: 0 2rem;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: aqua;
+    letter-spacing: 0.7px;
+}
+
+.email:focus{
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+.submit{
+    width: 25%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 19px;
+    background-color: transparent;
+    color: aqua;
+    font-weight:500;
+    letter-spacing: 1px;
+    border: 3px solid aqua;
+    transition: all 0.2s ease-in-out;
+    margin-top: 4rem;
+}
+::-webkit-input-placeholder{
+    font-weight: 500;
+    color: rgb(47, 47, 47);
+    font-size: 18px;
+    letter-spacing: 0.7px;
+}
+.submit:hover{
+    background-color:aqua;
+    border: none;
+    color: rgb(0, 0, 0);
+}

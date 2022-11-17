@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout form</title>
+    <link rel="shortcut icon" href="/Landing-page/logopaltu.png" type="image/x-icon">
+    <link rel="stylesheet" href="timeout.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Comming Soon <span class="extra1">Website</span></h1>
+        <p class="pfrist">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ratione, rem, ducimus quos quis earum nulla explicabo iusto, officia sunt quas illum blanditiis quasi labore.</p>
+        <div class="time-content">
+            <div class="time">
+                <span class="maintime daygola"></span>
+                <span class="day">Day</span>
+            </div>
+            <div class="time">
+                <span class="maintime hour"></span>
+                <span class="day">Hours</span>
+            </div>
+            <div class="time">
+                <span class="maintime minute"></span>
+                <span class="day">Mintue</span>
+            </div>
+            <div class="time">
+                <span class="maintime second"></span>
+                <span class="day">Second</span>
+            </div>
+        </div>
+        <span class="text">Subcribe now to get lasted updates!</span>
+       <form action="">
+            <input type="text" class="email" placeholder="Enter your email">
+            <input type="submit" class="submit" value="Notify Me" >
+       </form>
+    </div>
+
+    <script>
+        let daytime = 365,
+        Hourstime = 11, 
+        mintime = 55, 
+        sectime = 09
+
+        const timeing = setInterval(() => {
+            sectime--
+            sectime =  sectime < 10 ? `0${sectime} ` : sectime
+            if (sectime == 0) {
+                mintime--
+                sectime = 60
+                mintime =  mintime < 10 ? `0${mintime} ` : mintime
+            // console.log(mintime);
+        }
+        if (mintime == 00) {
+            Hourstime--
+            mintime = 60
+            Hourstime =  Hourstime < 10 ? `0${Hourstime} ` : Hourstime
+            // console.log(Hourstime);
+        }
+        if (Hourstime == 00) {
+            daytime--
+            Hourstime = 0
+            daytime =  daytime < 10 ? `0${daytime} ` : daytime
+            // console.log(mintime);
+        }
+        document.querySelector(".second").innerHTML = sectime
+        document.querySelector(".minute").innerHTML = mintime
+        document.querySelector(".hour").innerHTML = Hourstime
+        document.querySelector(".daygola").innerHTML = daytime
+
+        }, 1000);
+
+    </script>
+</body>
+</html>
